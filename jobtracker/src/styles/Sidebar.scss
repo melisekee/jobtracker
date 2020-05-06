@@ -1,0 +1,66 @@
+.Sidebar {
+    background-color: #F20C51;
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: 200px;
+    color: #ffffff;
+
+    &__Logo {
+        text-align: left;
+        width: 100px;
+        padding-top: 10px;
+        height: 50px;
+        font-size: 18px;
+        padding-left: 20px;
+    }
+
+    &__Menu {
+        vertical-align: middle;
+        text-align: left;
+        font-size: 16px;
+        
+        .menu {
+            padding: 0;
+        
+            &__item {
+                list-style-type: none;
+                transition: background-color 200ms;
+        
+                &:hover {
+                    background-color: #BE003A;
+                }
+
+                &--active {
+                    background-color: #BE003A;
+                }
+        
+                a {
+                    color: #ffffff;         
+                    text-decoration: none;
+        
+                    &:hover {
+                        background-color: #BE003A;
+                    }
+        
+
+                }
+            }
+        }
+    }
+
+    .SidebarNavItem {
+        margin-left: 0px;
+        font-size: 15px;
+
+        .SidebarNavItem__Content {
+            padding-left: 20px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            vertical-align: middle;
+        }
+    }
+}
